@@ -58,7 +58,7 @@ def x_parse(path):
     
 def main():
     #读取文件
-    mfiles = mylib.readFiles(kind="html")
+    mfiles = mylib.readFiles(kind=["html"])
     threads = []
     for filename in mfiles:
         threadt = mylib.myThread(filename)
