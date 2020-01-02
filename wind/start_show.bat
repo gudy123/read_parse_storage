@@ -1,1 +1,1 @@
-python parseWindTXT.py
+python parse.py
