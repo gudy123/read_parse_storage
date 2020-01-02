@@ -49,7 +49,7 @@ def x_parse(path):
     mylib.writeInMongo("other","instruction",res)
     
 def main():
-    mfiles = mylib.readFiles(kind = "html")
+    mfiles = mylib.readFiles(kind = ["html"])
     threads = []
     for filename in mfiles:
         threadt = mylib.myThread(filename)
