@@ -7,7 +7,7 @@ from parse import x_parse
 
 #读文件夹内文件
 #path 不设置时，默认在代码的当前路径读文件
-def readFiles(path="",kind="txt"):
+def readFiles(path="",kind=["txt"]):
     if path == "":
         file_dir = os.getcwd()
     else:
@@ -20,10 +20,11 @@ def readFiles(path="",kind="txt"):
         if root == file_dir + "\\old":
             continue
         for i in files:
-            #筛选文件类型，有待改进
-            if i[-3:] == kind[-3:]:
-                t = "%s\%s"%(root,i)
-                mfiles.append(t)
+            for k in kind:
+                #筛选文件类型，有待改进
+                if i[-3:] == k[-3:]:
+                    t = "%s\%s"%(root,i)
+                    mfiles.append(t)
     print(mfiles)
     return mfiles
     
