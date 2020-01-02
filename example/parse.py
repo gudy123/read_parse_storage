@@ -1,19 +1,24 @@
 import sys
+#write code here
 sys.path.append(r"mylib文件夹路径")
 import mylib
 import random
 
 def x_parse(path):
-    #读取文件数据
+    #读取文件数据 
+    #write code here
     pass
     #解析文件数据
+    #write code here
     pass
     #存储文件数据
+    #write code here
     pass
     
 def main():
     #读取文件 制定你要分析的文件类型
-    mfiles = mylib.readFiles(kind="txt")
+    #write code here
+    mfiles = mylib.readFiles(kind=["txt"])
     threads = []
     for filename in mfiles:
         threadt = mylib.myThread(filename)
