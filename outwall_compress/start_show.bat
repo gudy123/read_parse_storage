@@ -1,1 +1,1 @@
-python parse_compress.py
+python parse.py
